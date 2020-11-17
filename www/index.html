@@ -2,12 +2,15 @@
 <html>
 	<head> <!-- Zusatzinfo für den Browser-->
 		<title>MPS</title>
+		<link rel="stylesheet" href="style.css"/>
 	</head>
 	<body> <!-- Alles, was man sieht -->
-		<div> <!-- Oben das Menü -->
+
+		<div id="menue"> <!-- Oben das Menü -->
 			<div>Eintrag 1</div>
 			<div>Eintrag 2</div>
 		</div>
+		
 		<!-- Erste Hälfte -->
 		<div> <!-- große Box -->
 			<div> <!-- Box -->
@@ -15,8 +18,38 @@
 				<button>Start</button>
 			</div>
 		</div>
-
+		
 		<!-- Zweite Hälfte -->
+		<div>
+			<div>
+				<p> text </p>
+				<div class="themenfeld">Meditation</div>
+				<div class="themenfeld">Mathematik</div>
+				<div class="themenfeld">Yoga</div>
+			</div>
+		</div>
 
+		<!--
+		<style>
+			#menue {
+				border: 4px dashed black;
+				width: 100%;
+			}
+
+			.themenfeld {
+				border: 3px dotted blue;
+				width: 33.33%;
+				float: left;
+				box-sizing: border-box;
+			}
+			
+			div {
+				border: 2px solid red;
+				width: 30%;
+			}
+			
+		</style>
+		-->
+		
 	</body>
 </html>

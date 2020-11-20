@@ -5,28 +5,32 @@ body {
 
 #menue {
 	width: 100%;
-	height: 40px;
+	height: 4%;
 	background: #E0E080;
 }
 
 .menue_eintrag {
+	height: 100%;
+	padding: 0.5em 1em 0em 1em;
 	float: left;
-	margin-top: 0.5em;
-	margin-left: 2%;
+	background: inherit;
 	color: #505050;
 	font-family: sans;
 	font-size: 1em;
+	box-sizing: border-box;
 }
 
 .menue_eintrag:hover {
-	color: #000000;
+	color: #E0E0E0;
+	background: #505050;
 }
 
 #menue_text {
-	margin-left: 15%;
+	float: left;
+	margin-left: 5em;
 	color: #909000;
 	font-style: italic;
 	font-family: serif;
 	font-size: 1.5em;
-	margin-top: 0.2em;
+	padding-top: 0.2em;
 }

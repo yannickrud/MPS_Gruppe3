@@ -1,0 +1,32 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#menue {
+	width: 100%;
+	height: 40px;
+	background: #E0E080;
+}
+
+.menue_eintrag {
+	float: left;
+	margin-top: 0.5em;
+	margin-left: 2%;
+	color: #505050;
+	font-family: sans;
+	font-size: 1em;
+}
+
+.menue_eintrag:hover {
+	color: #000000;
+}
+
+#menue_text {
+	margin-left: 15%;
+	color: #909000;
+	font-style: italic;
+	font-family: serif;
+	font-size: 1.5em;
+	margin-top: 0.2em;
+}

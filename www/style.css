@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#grossebox {
+    width: auto;
+    background-color: lightblue;
+    height: 680px;
+    padding-bottom: 50px;
+}
+
+#button {
+    margin-top: 200px;
+    margin-left: 670px;
+    margin-right: 200px;
+}
+
+#headline {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 70px;
+  margin-left: 520px;
+}
+
+#text {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#kleinebox {
+    background-color: pink;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}

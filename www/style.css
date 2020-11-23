@@ -39,32 +39,32 @@ body {
 	padding-top: 0.2em;
 }
 
-#grossebox {
+#WillkommenTextBox {
     width: auto;
     background-color: lightblue;
     height: 100%;
     padding-bottom: 50px;
 }
 
-#button {
+#Startbutton {
     margin-top: 200px;
     margin-left: 670px;
     margin-right: 200px;
 }
 
-#headline {
+#Willkommenheadline {
   color: white;
   text-shadow: 2px 2px 5px black;
   font-size: 70px;
   margin-left: 520px;
 }
 
-#text {
+#Einfuehrungstext {
     margin-left: 200px;
     margin-right: 200px;
 }
 
-#kleinebox {
+#EnfuehrungsTextBox {
     background-color: pink;
     width: 50%;
     margin: 0 auto;
@@ -97,7 +97,7 @@ body {
     background-color: #ffff66;
 }
 
-#textfeld2 {
+#ThemenauswahlTextBox {
     background-color: #ffff66;
     width: 80%;
     padding: 80px;
@@ -106,7 +106,7 @@ body {
 
 }
 
-#text2 {
+#Themenauswahl {
     color: grey;
     text-align: center;
     font-size: 40px;

@@ -132,3 +132,16 @@ body {
 		height: 3em;
 	}
 }
+
+@media (max-width: 800px) {
+	.themenfeldzweitereihe {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+		height: 4em;
+	}
+
+	.themenfeld div {
+		height: 3em;
+	}
+}

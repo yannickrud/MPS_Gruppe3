@@ -3,30 +3,69 @@
 	<head> <!-- Zusatzinfo für den Browser-->
 		<title>MPS</title>
 		<link rel="stylesheet" href="style.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
 	</head>
 	<body> <!-- Alles, was man sieht -->
 
 		<div id="menue"> <!-- Oben das Menü -->
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 1</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 2</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 3</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 4</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 5</div>
-			</a>
-			<a href="#">
-<!--				<div id="menue_text">Hier könnte Ihre Werbung stehen</div>-->
-			</a>
+		
+			<div id="popup_button" onclick="showPopup()">
+				Los
+			</div>
+			
+			<div class="popup_content" id="popup_window">
+				<div id="popup_header">
+					<div id="popup_close_button" onclick="hidePopup()">
+						schließen
+					</div>
+				</div>
+				<div class="themenfeld" style="float: none; width: 80%;">
+					Mathematik
+				</div>
+				<div class="themenfeld" style="float: none; width: 80%;">
+					Yoga
+				</div>
+			</div>
+			
+			<div class="dropdown" onclick="showDropdown()">
+				<span class="dropdown_text">
+					Über
+				</span>
+				<div class="dropdown_content" id="dropdown_window">
+					<div class="dropdown_entry">
+						<span class="dropdown_text">
+							<a href="#1" class="undecorated_link">
+								Warum X?
+							</a>
+						</span>
+					</div>
+					<div class="dropdown_entry">
+						<span class="dropdown_text">
+							<a href="#2" class="undecorated_link">
+								Wie funktioniert's?
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
+		
+		<script>
+			function showPopup() {
+				var popup = document.getElementById("popup_window");
+				popup.classList.add("show");
+			}
+
+			function hidePopup() {
+				var popup = document.getElementById("popup_window");
+				popup.classList.remove("show");
+			}
+
+			function showDropdown() {
+				var dropdown = document.getElementById("dropdown_window");
+				dropdown.classList.toggle("show");
+			}
+		</script>	
 
 		<!-- Erste Hälfte -->
 		<div id="grossebox"> <!-- große Box -->

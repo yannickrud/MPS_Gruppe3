@@ -3,30 +3,50 @@
 	<head> <!-- Zusatzinfo für den Browser-->
 		<title>MPS</title>
 		<link rel="stylesheet" href="style.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
 	</head>
 	<body> <!-- Alles, was man sieht -->
 
 		<div id="menue"> <!-- Oben das Menü -->
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 1</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 2</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 3</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 4</div>
-			</a>
-			<a href="#">
-				<div class="menue_eintrag">Eintrag 5</div>
-			</a>
-			<a href="#">
+			<div class="popup" onclick="testPopup()">
+				Los
+				<div class="popup_content" id="popup">
+					<span>POPUP</span>
+				</div>
+			</div>
+		
+<!--			<a href="#">-->
+<!--				<div class="menue_eintrag">-->
+<!--					<span>Eintrag 1</span>-->
+<!--					<div class="dropdown">-->
+<!--						<div>Untereintrag 1</div>-->
+<!--						<div>Untereintrag 2</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</a>-->
+<!--			<a href="#">-->
+<!--				<div class="menue_eintrag">Eintrag 2</div>-->
+<!--			</a>-->
+<!--			<a href="#">-->
+<!--				<div class="menue_eintrag">Eintrag 3</div>-->
+<!--			</a>-->
+<!--			<a href="#">-->
+<!--				<div class="menue_eintrag">Eintrag 4</div>-->
+<!--			</a>-->
+<!--			<a href="#">-->
+<!--				<div class="menue_eintrag">Eintrag 5</div>-->
+<!--			</a>-->
+<!--			<a href="#">-->
 <!--				<div id="menue_text">Hier könnte Ihre Werbung stehen</div>-->
-			</a>
+<!--			</a>-->
 		</div>
+		<script>
+			function testPopup() {
+				console.log("popup");
+				var popup = document.getElementById("popup");
+				popup.classList.toggle("show");
+			}
+		</script>	
 
 		<!-- Erste Hälfte -->
 		<div id="grossebox"> <!-- große Box -->

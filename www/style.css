@@ -14,35 +14,46 @@ body {
 }
 
 #popup_button {
-	cursor: pointer;
+/*	Position */
 	position: relative;
 	top: 0.25em;
 	height: 2em;
-	line-height: 1.75em;
+	width: 5em;
+	left: 0.4em;
+
+/*  Rahmen */
+	box-sizing: border-box;
 	border: 2px solid #080;
 	border-radius: 5px;
-	width: 5em;
-	box-sizing: border-box;
-	left: 0.4em;
-	background: #0A0;
+
+/*  Text */
+	line-height: 1.75em;
+	text-align: center;
 	color: #FFF;
 	font-family: sans;
 	font-weight: bold;
-	text-align: center;
+
+/*  Sonstiges */
+	background: #0A0;
+	cursor: pointer;
 }
 
 .popup_content {
 	visibility: hidden;
+	
 	position: fixed;
 	left: 50%;
 	top: 50%;
 	width: 25%;
 	height: 25%;
+
 	margin-left: -12.5%;
 	margin-top: -12.5%;
+
 	background: #FFF;
 	color: #000;
 	text-align: center;
+
 	border-radius: 7px;
 }
 
@@ -55,29 +66,36 @@ body {
 }
 
 #popup_close_button {
-	cursor: pointer;
-	background: #F00;
-	width: 5em;
 	position: absolute;
-	right: 0px;
+	width: 5em;
+	right: 0px; /* rechts oben in der Ecke */
+
+	padding-top: 0.25em;
+	
 	box-sizing: border-box;
 	border-bottom-left-radius: 7px;
-	font-family: sans;
+
+	background: #F00;
+
 	color: white;
+	font-family: sans;
 	font-size: 14px;
-	padding-top: 0.25em;
 	text-align: center;
+
+	cursor: pointer;
 }
 
 .dropdown {
 	position: relative;
-	cursor: pointer;
 	top: -1.75em;
 	left: 6em;
 	height: 2em;
 	width: 4em;
+
 	font-family: sans;
 	line-height: 2.25em;
+
+	cursor: pointer;
 }
 
 .dropdown_text {

@@ -120,32 +120,32 @@ body {
 	visibility: visible;
 }
 
-#grossebox {
+#Hintergrund1 {
     width: 100%;
     background-color: lightblue;
     height: 100%;
     padding-bottom: 50px;
 }
 
-#button {
+/*#Startbutton {
     margin-top: 200px;
     margin-left: 670px;
     margin-right: 200px;
-}
+}*/
 
-#headline {
+#headline1 {
   color: white;
   text-shadow: 2px 2px 5px black;
   font-size: 70px;
   margin-left: 520px;
 }
 
-#text {
+#Einfuehrungstext {
     margin-left: 200px;
     margin-right: 200px;
 }
 
-#kleinebox {
+#EnfuehrungsTextBox {
 	height: 20%;
     background-color: pink;
     width: 50%;
@@ -184,7 +184,7 @@ body {
     background-color: #ffff66;
 }
 
-#textfeld2 {
+#ThemenauswahlTextBox {
     background-color: #ffff66;
     width: 80%;
 	margin: 0 auto;
@@ -194,7 +194,7 @@ body {
 	border: 3px solid black;
 }
 
-#text2 {
+#Themenauswahl {
     color: grey;
     text-align: center;
     font-size: 1.5em;

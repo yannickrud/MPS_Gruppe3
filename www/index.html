@@ -9,19 +9,33 @@
     </head>
     <!-- Startseite -->
     <body> <!-- Alles, was man sieht -->  
-        <div class="topnav">
-            <a class="active" onclick="showPopup()">Los</a>
-            <div>
-            <a>Über</a>
-                <div class="dropdown-content">
-                    <a>Warum X?</a>
-                    <a>Wie funktioniet's?</a>
+        
+                <div id="menu"> <!-- Hauptmenü -->
+            <div class = "active" id="popup_button" onclick="showPopup()">Los</div>
+            <div class="popup_content" id="popup_window">
+                <div id="popup_header"> <!-- eine unsichtbare Leiste oben, um Abstand zu erzeugen -->
+                    <div id="popup_close_button" onclick="hidePopup()">schließen</div>
+                </div>
+                <!-- beispielhaft -->
+                <div class="themenfeld" style="float: none; width: 80%;">Mathematik</div>
+                <div class="themenfeld" style="float: none; width: 80%;">Yoga</div>
+            </div>
+            <div class="dropdown" onclick="showDropdown()">
+                <span class="dropdown_text">Über</span>
+                <div class="dropdown_content" id="dropdown_window">
+                    <div class="dropdown_entry">
+                        <span class="dropdown_text">
+                            <a href="#1" class="undecorated_link">Warum X?</a>
+                        </span>
+                    </div>
+                    <div class="dropdown_entry">
+                        <span class="dropdown_text">
+                            <a href="#2" class="undecorated_link"> Wie funktioniert's?</a>
+                        </span>
+                    </div>
                 </div>
             </div>
-            
         </div>
-
-        <!-- Hier menue einfuegen
 
         <!-- Erste Hälfte -->
         <div id="Hintergrund1"> <!-- Der Hintergrund des ersten Fensters auf der Startseite -->

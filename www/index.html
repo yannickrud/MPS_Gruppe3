@@ -3,6 +3,7 @@
 	<head> <!-- Zusatzinfo für den Browser-->
 		<title>MPS</title>
 		<link rel="stylesheet" href="style.css"/>
+		<script src="scriptFile.js"></script>	
 <!--		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
 	</head>
 	<!-- Startseite -->
@@ -52,31 +53,7 @@
 				</div>
 			</div>
 		</div>
-		
-		<script>
-			//showPopup() wird aufgerufen, sobald man den "Los"-Knopf drückt
-			//fügt dem popup_window die CSS-Klassenzugehörigkeit "show" hinzu, wodurch "visibility: visible" gesetzt wird
 
-			//showDropdown() funktioniert analog
-			//hidePopup() funktioniert genau umgekehrt
-			
-			
-			function showPopup() {
-				var popup = document.getElementById("popup_window");
-				popup.classList.add("show");
-			}
-
-			
-			function hidePopup() {
-				var popup = document.getElementById("popup_window");
-				popup.classList.remove("show");
-			}
-
-			function showDropdown() {
-				var dropdown = document.getElementById("dropdown_window");
-				dropdown.classList.toggle("show");
-			}
-		</script>	
 
 		<!-- Erste Hälfte -->
 		<div id="Hintergrund1"> <!-- Der Hintergrund des ersten Fensters auf der Startseite -->
@@ -92,9 +69,13 @@
 			<div id="ThemenauswahlTextBox">
 				<p id="Themenauswahl"> Such dir das Thema aus, das dich am meisten interessiert.</p>
 			</div>
+
+
+
+			
 			<div id="themenfeldbox">
 				<div class="themenfeld">
-				<!--<div>Meditation</div>-->	
+				<div>Meditation</div>
 				</div>
 				<div class="themenfeld">Mathematik</div>
 				<div class="themenfeld">Yoga</div>

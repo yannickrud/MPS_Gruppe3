@@ -1,89 +1,55 @@
 <!DOCTYPE>
 <html>
-	<head> <!-- Zusatzinfo für den Browser-->
-		<title>MPS</title>
-		<link rel="stylesheet" href="style.css"/>
-		<script src="scriptFile.js"></script>	
-<!--		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
-	</head>
-	<!-- Startseite -->
-	<body> <!-- Alles, was man sieht -->
+    <head> <!-- Zusatzinfo für den Browser-->
+        <title>MPS</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="scriptFile.js"></script>	
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+    </head>
+    <!-- Startseite -->
+    <body> <!-- Alles, was man sieht -->  
+        <div class="topnav">
+            <a class="active" onclick="showPopup()">Los</a>
+            <div>
+            <a>Über</a>
+                <div class="dropdown-content">
+                    <a>Warum X?</a>
+                    <a>Wie funktioniet's?</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Hier menue einfuegen
+
+        <!-- Erste Hälfte -->
+        <div id="Hintergrund1"> <!-- Der Hintergrund des ersten Fensters auf der Startseite -->
+            <p id="headline1"> Willkommen </p>  
+            <div id="EinfuehrungsTextBox"> <!-- In dieses Textfeld, kommt die Beschreibung der Seite -->
+                <p id="Einfuehrungstext"> Diese Seite wurde erstellt, dass Deine Konzentrationsfähigkeit und Kreativität durch vielfältige Aufgaben gesteigert wird. Wir bieten Dir spannende Übungen aus den Bereichen Yoga, Kunst, Mathematik...</p>
+            </div>    <!--			<a href="#window2"><button id="button">Start</button></a>-->
+        </div>
+        <!-- Zweite Hälfte -->
+        <div id="window2">
+            <div id="ThemenauswahlTextBox">
+                <p id="Themenauswahl"> Such dir das Thema aus, das dich am meisten interessiert.</p>
+            </div>
+
+            ⁄
 
 
-		<div id="menue"> <!-- Hauptmenü -->
-		
-			<div id="popup_button" onclick="showPopup()">
-				Los
-			</div>
-			
-			<div class="popup_content" id="popup_window">
-				<div id="popup_header"> <!-- eine unsichtbare Leiste oben, um Abstand zu erzeugen -->
-					<div id="popup_close_button" onclick="hidePopup()">
-						schließen
-					</div>
-				</div>
-				<!-- beispielhaft -->
-				<div class="themenfeld" style="float: none; width: 80%;">
-					Mathematik
-				</div>
-				<div class="themenfeld" style="float: none; width: 80%;">
-					Yoga
-				</div>
-			</div>
-			
-			<div class="dropdown" onclick="showDropdown()">
-				<span class="dropdown_text">
-					Über
-				</span>
-				<div class="dropdown_content" id="dropdown_window">
-					<div class="dropdown_entry">
-						<span class="dropdown_text">
-							<a href="#1" class="undecorated_link">
-								Warum X?
-							</a>
-						</span>
-					</div>
-					<div class="dropdown_entry">
-						<span class="dropdown_text">
-							<a href="#2" class="undecorated_link">
-								Wie funktioniert's?
-							</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<!-- Erste Hälfte -->
-		<div id="Hintergrund1"> <!-- Der Hintergrund des ersten Fensters auf der Startseite -->
-				<p id="headline1"> Willkommen </p>
-			<div id="EinführungsTextBox"> <!-- In dieses Textfeld, kommt die Beschreibung der Seite -->
-					<p id="Einfuehrungstext"> Diese Seite wurde erstellt, dass Deine Konzentrationsfähigkeit und Kreativität durch vielfältige Aufgaben gesteigert wird. Wir bieten Dir spannende Übungen aus den Bereichen Yoga, Kunst, Mathematik...</p>
-			</div>
-<!--			<a href="#window2"><button id="button">Start</button></a>-->
-		</div>
-
-		<!-- Zweite Hälfte -->
-		<div id="window2">
-			<div id="ThemenauswahlTextBox">
-				<p id="Themenauswahl"> Such dir das Thema aus, das dich am meisten interessiert.</p>
-			</div>
-
-
-
-			
-			<div id="themenfeldbox">
-				<div class="themenfeld">
-				<div>Meditation</div>
-				</div>
-				<div class="themenfeld">Mathematik</div>
-				<div class="themenfeld">Yoga</div>
-				<div class="themenfeldzweitereihe">Rätsel</div>
-				<div class="themenfeldzweitereihe">Mentalität</div>
-				<div class="themenfeldzweitereihe">Sketching</div>
-				<div class="themenfelddrittereihe">Design Thinking</div>
-			</div>
-		</div>
-	</body>
+            <div id="themenfeldbox">
+                <div class="themenfeld">
+                    <div>Meditation</div>
+                </div>
+                <div class="themenfeld">Mathematik</div>
+                <div class="themenfeld">Yoga</div>
+                <div class="themenfeldzweitereihe">Rätsel</div>
+                <div class="themenfeldzweitereihe">Mentalität</div>
+                <div class="themenfeldzweitereihe">Sketching</div>
+                <div class="themenfelddrittereihe">Design Thinking</div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,123 +1,120 @@
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-#menue {
-	width: 100%;
-	height: 2.5em;
-	background: #FFF;
+#menu {
+    width: 100%;
+    height: 5%;
+    background: #FFF;
 }
 
 #popup_button {
-/*	Position */
-	position: relative;
-	top: 0.25em;
-	height: 2em;
-	width: 5em;
-	left: 0.4em;
+    /*	Position */
+    top: 0.25em;
+    height: 2em;
+    width: 5em;
+    left: 0.4em;
 
-/*  Rahmen */
-	box-sizing: border-box;
-	border: 2px solid #080;
-	border-radius: 5px;
+    /*  Rahmen */
+    box-sizing: border-box;
+    border: 1% solid #080;
+    border-radius: 5%;
 
-/*  Text */
-	line-height: 1.75em;
-	text-align: center;
-	color: #FFF;
-	font-family: sans;
-	font-weight: bold;
+    /*  Text */
+    line-height: 1.75em;
+    text-align: center;
+    color: #FFF;
+    font-family: sans;
+    font-weight: bold;
 
-/*  Sonstiges */
-	background: #0A0;
-	cursor: pointer;
+    /*  Sonstiges */
+    background: #0A0;
+    cursor: pointer;
 }
 
 .popup_content {
-	visibility: hidden;
-	
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	width: 25%;
-	height: 25%;
+    visibility: hidden;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 25%;
+    height: 25%;
 
-	margin-left: -12.5%;
-	margin-top: -12.5%;
+    margin-left: -12.5%; 
+    margin-top: -12.5%;
 
-	background: #FFF;
-	color: #000;
-	text-align: center;
+    background: #FFF;
+    color: #000;
+    text-align: center;
 
-	border-radius: 7px;
+    border-radius: 7px;
 }
 
 .show {
-	visibility: visible;
+    visibility: visible;
 }
 
 #popup_header {
-	height: 2em;
+    height: 2em;
 }
 
 #popup_close_button {
-	position: absolute;
-	width: 5em;
-	right: 0px; /* rechts oben in der Ecke */
+    position: absolute;
+    width: 5em;
+    right: 0px; /* rechts oben in der Ecke */
 
-	padding-top: 0.25em;
-	
-	box-sizing: border-box;
-	border-bottom-left-radius: 7px;
+    padding-top: 0.25em;
 
-	background: #F00;
+    box-sizing: border-box;
+    border-bottom-left-radius: 7px;
 
-	color: white;
-	font-family: sans;
-	font-size: 14px;
-	text-align: center;
+    background: #F00;
 
-	cursor: pointer;
+    color: white;
+    font-family: sans;
+    font-size: 14px;
+    text-align: center;
+
+    cursor: pointer;
 }
 
 .dropdown {
-	position: relative;
-	top: -1.75em;
-	left: 6em;
-	height: 2em;
-	width: 4em;
+    position: relative;
+    top: -1.75em;
+    left: 6em;
+    height: 2em;
+    width: 4em;
 
-	font-family: sans;
-	line-height: 2.25em;
+    font-family: sans;
+    line-height: 2.25em;
 
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .dropdown_text {
-	position: relative;
-	left: 0.5em;
+    position: relative;
+    left: 0.5em;
 }
 
 .undecorated_link {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .dropdown_content {
-	visibility: hidden;
-	position:relative;
-	top: -1px;
-	min-width: 10em;
-	background: #FFF;
+    visibility: hidden;
+    position:relative;
+    min-width: 10em;
+    background: #FFF;
 }
 
 .dropdown .show {
-	visibility: visible;
+    visibility: visible;
 }
 
 #Hintergrund1 {
@@ -128,27 +125,28 @@ body {
 }
 
 /*#Startbutton {
-    margin-top: 200px;
-    margin-left: 670px;
-    margin-right: 200px;
+margin-top: 200px;
+margin-left: 670px;
+margin-right: 200px;
 }*/
 
 #headline1 {
-  color: white;
-  text-shadow: 2px 2px 5px black;
-  font-size: 70px;
-  margin-left: 520px;
+    color: white;
+    /*position: relative*/
+    text-shadow: 2px 2px 5px black;
+    font-size: 8vw;
+    text-align: center
 }
 
 #Einfuehrungstext {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#EnfuehrungsTextBox {
-	height: 20%;
+#EinfuehrungsTextBox {
+    height: 50%;
     background-color: pink;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -156,9 +154,9 @@ body {
 .themenfeld {
     border: 4px solid grey;
     float: left;
-	box-sizing: border-box;
-	height: 3em;
-	line-height: 2.75em;
+    box-sizing: border-box;
+    height: 3em;
+    line-height: 2.75em;
     width: 33.33%;
     background-color: lightgrey;
     text-align: center;
@@ -167,10 +165,10 @@ body {
 }
 
 .themenfeld div {
-	max-width: 80%;
-	border: 3px solid black;
-	margin: 0 auto;
-	word-wrap: break-word;
+    max-width: 80%;
+    border: 3px solid black;
+    margin: 0 auto;
+    word-wrap: break-word;
 }
 
 #themenfeldbox{
@@ -187,11 +185,11 @@ body {
 #ThemenauswahlTextBox {
     background-color: #ffff66;
     width: 80%;
-	margin: 0 auto;
-	margin-top: 10%;
-	margin-bottom: 10%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
     min-height: 30%;
-	border: 3px solid black;
+    border: 3px solid black;
 }
 
 #Themenauswahl {
@@ -202,24 +200,24 @@ body {
 }
 
 @media (max-width: 721px) {
-	.themenfeld {
-		float: none;
-		width: 80%;
-		margin: 0 auto;
-		height: 4em;
-	}
+    .themenfeld {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        height: 4em;
+    }
 
-	.themenfeld div {
-		height: 3em;
-	}
+    .themenfeld div {
+        height: 3em;
+    }
 }
 
 .themenfeldzweitereihe {
     border: 4px solid grey;
     float: left;
-	box-sizing: border-box;
-	height: 3em;
-	line-height: 2.75em;
+    box-sizing: border-box;
+    height: 3em;
+    line-height: 2.75em;
     width: 33.33%;
     background-color: lightgrey;
     text-align: center;
@@ -228,31 +226,31 @@ body {
 }
 
 .themenfeldzweitereihe div {
-	max-width: 80%;
-	border: 3px solid black;
-	margin: 0 auto;
-	word-wrap: break-word;
+    max-width: 80%;
+    border: 3px solid black;
+    margin: 0 auto;
+    word-wrap: break-word;
 }
 
 @media (max-width: 721px) {
-	.themenfeldzweitereihe {
-		float: none;
-		width: 80%;
-		margin: 0 auto;
-		height: 4em;
-	}
+    .themenfeldzweitereihe {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        height: 4em;
+    }
 
-	.themenfeldzweitereihe div {
-		height: 3em;
-	}
+    .themenfeldzweitereihe div {
+        height: 3em;
+    }
 }
 
 .themenfelddrittereihe {
     border: 4px solid grey;
     float: left;
-	box-sizing: border-box;
-	height: 3em;
-	line-height: 2.75em;
+    box-sizing: border-box;
+    height: 3em;
+    line-height: 2.75em;
     width: 33.33%;
     background-color: lightgrey;
     text-align: center;
@@ -261,21 +259,21 @@ body {
 }
 
 .themenfelddrittereihe div {
-	max-width: 80%;
-	border: 3px solid black;
-	margin: 0 auto;
-	word-wrap: break-word;
+    max-width: 80%;
+    border: 3px solid black;
+    margin: 0 auto;
+    word-wrap: break-word;
 }
 
 @media (max-width: 721px) {
-	.themenfelddrittereihe {
-		float: none;
-		width: 80%;
-		margin: 0 auto;
-		height: 4em;
-	}
+    .themenfelddrittereihe {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        height: 4em;
+    }
 
-	.themenfelddrittereihe div {
-		height: 3em;
-	}
+    .themenfelddrittereihe div {
+        height: 3em;
+    }
 }

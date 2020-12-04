@@ -13,29 +13,37 @@ body {
     background: #FFF;
 }
 
+
 #popup_button {
-    /*	Position */
+/*    	Position */
     top: 0.25em;
     height: 2em;
     width: 5em;
     left: 0.4em;
 
-    /*  Rahmen */
+
+
+/*      Rahmen */
     box-sizing: border-box;
     border: 1% solid #080;
     border-radius: 5%;
 
-    /*  Text */
+
+
+/*      Text */
     line-height: 1.75em;
     text-align: center;
     color: #FFF;
     font-family: sans;
     font-weight: bold;
 
-    /*  Sonstiges */
+
+
+/*      Sonstiges */
     background: #0A0;
     cursor: pointer;
 }
+
 
 .popup_content {
     visibility: hidden;
@@ -83,6 +91,7 @@ body {
     cursor: pointer;
 }
 
+
 .dropdown {
     position: relative;
     top: -1.75em;
@@ -117,6 +126,7 @@ body {
     visibility: visible;
 }
 
+
 #Hintergrund1 {
     width: 100%;
     background-color: lightblue;
@@ -132,10 +142,9 @@ margin-right: 200px;
 
 #headline1 {
     color: white;
-    /*position: relative*/
     text-shadow: 2px 2px 5px black;
-    font-size: 8vw;
-    text-align: center
+    font-size: 6vw;
+    text-align: center;
 }
 
 #Einfuehrungstext {

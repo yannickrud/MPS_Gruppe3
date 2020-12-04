@@ -4,7 +4,6 @@
 			//showDropdown() funktioniert analog
 			//hidePopup() funktioniert genau umgekehrt
 			
-			
 			function showPopup() {
 				var popup = document.getElementById("popup_window");
 				popup.classList.add("show");

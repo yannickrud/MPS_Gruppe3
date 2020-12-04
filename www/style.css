@@ -13,6 +13,21 @@ body {
     background: #FFF;
 }
 
+#imgContainer {
+    background-color: d9b6b4;
+}
+
+img {
+    opacity: 0.8
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 #popup_button {
 /*    	Position */
@@ -140,11 +155,13 @@ margin-left: 670px;
 margin-right: 200px;
 }*/
 
-#headline1 {
+.headline1 {
     color: white;
     text-shadow: 2px 2px 5px black;
     font-size: 6vw;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 #Einfuehrungstext {

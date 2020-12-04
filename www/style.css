@@ -53,7 +53,7 @@ body {
     width: 25%;
     height: 25%;
 
-    margin-left: -12.5%; 
+    margin-left: -12.5%;
     margin-top: -12.5%;
 
     background: #FFF;
@@ -171,6 +171,9 @@ margin-right: 200px;
     text-align: center;
     font-size: 25px;
     font-family: "Times New Roman", Times, serif;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-left: 10%
 }
 
 .themenfeld div {
@@ -178,6 +181,8 @@ margin-right: 200px;
     border: 3px solid black;
     margin: 0 auto;
     word-wrap: break-word;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
 #themenfeldbox{
@@ -196,7 +201,7 @@ margin-right: 200px;
     width: 80%;
     margin: 0 auto;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     min-height: 30%;
     border: 3px solid black;
 }
@@ -232,6 +237,9 @@ margin-right: 200px;
     text-align: center;
     font-size: 25px;
     font-family: "Times New Roman", Times, serif;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-left: 10%
 }
 
 .themenfeldzweitereihe div {
@@ -265,6 +273,9 @@ margin-right: 200px;
     text-align: center;
     font-size: 25px;
     font-family: "Times New Roman", Times, serif;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-left: 10%
 }
 
 .themenfelddrittereihe div {

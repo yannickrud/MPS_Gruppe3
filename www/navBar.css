@@ -18,7 +18,8 @@
 
 /* Page content */
 .content {
-    padding: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -28,7 +29,7 @@
     width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
 .sticky + .content {
     padding-top: 60px;
 }
@@ -57,7 +58,7 @@
 
 /* Add a red background color to navbar links on hover */
 #navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: greenyellow;
+    background-color: d9b6b4;
 }
 
 /* Dropdown content (hidden by default) */

@@ -1,21 +1,18 @@
-			//showPopup() wird aufgerufen, sobald man den "Los"-Knopf drückt
-			//fügt dem popup_window die CSS-Klassenzugehörigkeit "show" hinzu, wodurch "visibility: visible" gesetzt wird
+// When the user scrolls the page, execute myFunction 
 
-			//showDropdown() funktioniert analog
-			//hidePopup() funktioniert genau umgekehrt
-			
-			function showPopup() {
-				var popup = document.getElementById("popup_window");
-				popup.classList.add("show");
-			}
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyNavigationBar() {
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
 
-			
-			function hidePopup() {
-				var popup = document.getElementById("popup_window");
-				popup.classList.remove("show");
-			}
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
 
-			function showDropdown() {
-				var dropdown = document.getElementById("dropdown_window");
-				dropdown.classList.toggle("show");
-			}
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+window.onscroll = function () {stickyNavigationBar(); };

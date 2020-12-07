@@ -1,3 +1,5 @@
+@import "navBar.css";
+
 html {
     scroll-behavior: smooth;
 }
@@ -7,14 +9,9 @@ body {
     padding: 0;
 }
 
-#menu {
-    width: 100%;
-    height: 5%;
-    background: #FFF;
-}
-
 #imgContainer {
     background-color: d9b6b4;
+    padding-top: 50px;
 }
 
 img {
@@ -29,117 +26,15 @@ img {
 }
 
 
-#popup_button {
-/*    	Position */
-    top: 0.25em;
-    height: 2em;
-    width: 5em;
-    left: 0.4em;
 
 
 
-/*      Rahmen */
-    box-sizing: border-box;
-    border: 1% solid #080;
-    border-radius: 5%;
 
 
 
-/*      Text */
-    line-height: 1.75em;
-    text-align: center;
-    color: #FFF;
-    font-family: sans;
-    font-weight: bold;
 
 
 
-/*      Sonstiges */
-    background: #0A0;
-    cursor: pointer;
-}
-
-
-.popup_content {
-    visibility: hidden;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 25%;
-    height: 25%;
-
-    margin-left: -12.5%;
-    margin-top: -12.5%;
-
-    background: #FFF;
-    color: #000;
-    text-align: center;
-
-    border-radius: 7px;
-}
-
-.show {
-    visibility: visible;
-}
-
-#popup_header {
-    height: 2em;
-}
-
-#popup_close_button {
-    position: absolute;
-    width: 5em;
-    right: 0px; /* rechts oben in der Ecke */
-
-    padding-top: 0.25em;
-
-    box-sizing: border-box;
-    border-bottom-left-radius: 7px;
-
-    background: #F00;
-
-    color: white;
-    font-family: sans;
-    font-size: 14px;
-    text-align: center;
-
-    cursor: pointer;
-}
-
-
-.dropdown {
-    position: relative;
-    top: -1.75em;
-    left: 6em;
-    height: 2em;
-    width: 4em;
-
-    font-family: sans;
-    line-height: 2.25em;
-
-    cursor: pointer;
-}
-
-.dropdown_text {
-    position: relative;
-    left: 0.5em;
-}
-
-.undecorated_link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.dropdown_content {
-    visibility: hidden;
-    position:relative;
-    min-width: 10em;
-    background: #FFF;
-}
-
-.dropdown .show {
-    visibility: visible;
-}
 
 
 #Hintergrund1 {

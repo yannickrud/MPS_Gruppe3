@@ -3,39 +3,20 @@
     <head> <!-- Zusatzinfo für den Browser-->
         <title>MPS</title>
         <link rel="stylesheet" href="Startseite.css"/>
-        <script src="navBar.js"></script>
+        <script src="../html-snippets/navBar/navBar.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!-- Startseite -->
     <body> <!-- Alles, was man sieht -->  
 
-        <div id="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">Los</button>
-                <div class="dropdown-content">
-                    <a href="Startseite.html">Startseite</a>
-                    <a href="../Mathematik/Mathematik.html">Mathematik</a>
-                    <a href="../Meditation/Meditation.html">Meditation</a>
-                    <a href="../Sketching/Sketching.html">Sketching</a>
-                    <a href="../Rätsel/Rätsel.html">Rätsel</a>
-                    <a href="../Design Thinking/DesignThinking.html">Design Thinking</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Über</button>
-                <div class="dropdown-content">
-                    <a href="#3">Warum?</a>
-                    <a href="#1">Wie funktioniert's?</a>
-                </div>
-            </div>
-
-        </div>
+        <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
+        <script src="../html-snippets/w3-include-HTML.js"></script>
 
         <!-- Erste Hälfte -->
         <div id ="imgContainer">
             <h1 class="headline">MPS Cooler Projekttitel</h1>
-            <img src ="brain.jpg" class="center">
+            <img src ="./brain.jpg" class="center">
         </div>
         <div id="Hintergrund1"> <!-- Der Hintergrund des ersten Fensters auf der Startseite -->
             <h1 class="headline"> Willkommen </h1> 
@@ -54,28 +35,34 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <a href="#mathe">
-                        <img src="brain.jpg">
+                        <img src="../Mathematik/Mathe.jpg">
                     </a>
                     <div class="text">
                         Mathematik</div>
                 </div>
                 <div class="mySlides fade">
                     <a href="#meditation">
-                        <img src="brain.jpg">
+                        <img src="../Meditation/Meditation.jpg">
                     </a>
                     <div class="text">Meditation</div>
                 </div>
                 <div class="mySlides fade">
                     <a href="#sketching">
-                        <img src="brain.jpg">
+                        <img src="../Sketching/Sketching.jpeg">
                     </a>
                     <div class="text">Sketching</div>
                 </div>
                 <div class="mySlides fade">
                     <a href="#raetsel">
-                        <img src="brain.jpg">
+                        <img src="../Rätsel/Rätsel.jpg">
                     </a>
                     <div class="text">Rätsel</div>
+                </div>
+                <div class="mySlides fade">
+                    <a href="#design thinking">
+                        <img src="../Design Thinking/DesignThinking.jpg">
+                    </a>
+                    <div class="text">Design Thinking</div>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -88,23 +75,14 @@
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
                 </div>
             </div>
-            
-            <script src="slideShow.js"></script>
 
-<!--            https://codepen.io/terned/pen/bRPmQg-->
-            <div id="themenfeldbox">
-                <div class="themenfeld">
-                    <div>Meditation</div>
-                </div>
-                <div class="themenfeld">Mathematik</div>
-                <div class="themenfeld">Yoga</div>
-                <div class="themenfeldzweitereihe">Rätsel</div>
-                <div class="themenfeldzweitereihe">Mentalität</div>
-                <div class="themenfeldzweitereihe">Sketching</div>
-                <div class="themenfelddrittereihe">Design Thinking</div>
-            </div>
+            <script src="../html-snippets/slideShow/slideShow.js"></script>
+
+            <!--            https://codepen.io/terned/pen/bRPmQg-->
+
         </div>
     </body>
 </html>

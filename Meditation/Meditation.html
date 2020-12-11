@@ -4,7 +4,7 @@
 
         <title>MPS</title>
         <link rel="stylesheet" href="Meditation.css"/>
-        <script src="www/navBar.js"></script>
+        <script src="../html-snippets/navBar/navBar.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -14,28 +14,26 @@
         <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
         <script src="../html-snippets/w3-include-HTML.js"></script>
 
-        
-        <div> <!-- Überschrift + Beschreibung -->
-            <h1> Meditation </h1>
-            <p> tekaj </p>
+
+        <div id="imgContainer"> <!-- Überschrift + Beschreibung -->
+            <h1 class="headline"> Meditation </h1>
+            <img src ="Meditation.jpg" class="center">
+            <p class = "center"> tekaj </p>
         </div>
         <div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <iframe width= 80% height= 80%
                             src="https://www.youtube-nocookie.com/embed/4Z1RPavOX3s"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                                   encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
-
                     <div class="text">Erwachsene</div>
                 </div>
                 <div class="mySlides fade">
                     <iframe width= 80% height= 80%
 
                             src="https://www.youtube-nocookie.com/embed/dsgOgpf5d3A"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                                   encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
 
                     <div class="text">Kinder</div>
@@ -43,8 +41,7 @@
                 <div class="mySlides fade">
                     <iframe width= 80% height= 80%
                             src="https://www.youtube-nocookie.com/embed/TAbH1yusgRo"
-                            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                                   encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
 
                     <div class="text">Yoga</div>
@@ -61,7 +58,7 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-            <script src="../www/slideShow.js"></script>
+            <script src="../html-snippets/slideShow/slideShow.js"></script>
         </div>
     </body>
 </html>

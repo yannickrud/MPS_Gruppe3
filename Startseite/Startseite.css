@@ -1,5 +1,5 @@
-@import "navBar.css";
-@import "slideShow.css";
+@import "../html-snippets/navBar/navBar.css";
+@import "../html-snippets/slideShow/slideShow.css";
 
 html {
     scroll-behavior: smooth;

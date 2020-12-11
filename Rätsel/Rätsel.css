@@ -1,5 +1,4 @@
-@import "../www/navBar.css";
-@import "../www/slideShow.css";
+@import "../html-snippets/navBar/navBar.css";
 
 html {
     scroll-behavior: smooth;
@@ -8,4 +7,24 @@ html {
 body {
     margin: 0;
     padding: 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+.headline {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 6vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#imgContainer {
+    background-color: d9b6b4;
+    padding-top: 50px;
 }

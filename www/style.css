@@ -33,12 +33,6 @@ img {
     padding-bottom: 50px;
 }
 
-/*#Startbutton {
-margin-top: 200px;
-margin-left: 670px;
-margin-right: 200px;
-}*/
-
 .headline {
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -48,18 +42,25 @@ margin-right: 200px;
     margin: 0;
 }
 
-#Einfuehrungstext {
-    margin-left: 10%;
-    margin-right: 10%;
+#window2 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffff66;
+    background-color: #ffff66;
 }
 
-#EinfuehrungsTextBox {
-    height: 50%;
-    background-color: pink;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
+    #Einfuehrungstext {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #EinfuehrungsTextBox {
+        height: 50%;
+        background-color: pink;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
 
 .themenfeld {
     border: 4px solid grey;
@@ -89,13 +90,6 @@ margin-right: 200px;
 #themenfeldbox{
     width: 100%;
     background-color: aqua;
-}
-
-#window2 {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #ffff66;
-    background-color: #ffff66;
 }
 
 #ThemenauswahlTextBox {

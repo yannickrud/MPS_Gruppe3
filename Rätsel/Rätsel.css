@@ -15,8 +15,9 @@ body {
   margin-right: auto;
   width: 55%;
 }
+
 .headline {
-    color: white;
+    color: black;
     text-shadow: 2px 2px 5px black;
     font-size: 6vw;
     text-align: center;
@@ -25,6 +26,5 @@ body {
 }
 
 #imgContainer {
-    background-color: d9b6b4;
     padding-top: 50px;
 }

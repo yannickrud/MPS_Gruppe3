@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<canvas id="canvas" width="500" height="500" style="border: 1px solid black; cursor: crosshair;" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()">
+			<div id="thickness" width="30" height="30" style="border: 1px solid black;" onclick="changeThickness()">
+				3px
+			</div>
+		</canvas>
+
+
+		<script>
+			var canvas = document.getElementById("canvas");
+			var context = canvas.getContext("2d");
+
+			var lastX = -1;
+			var lastY = -1;
+			var doDraw = false;
+
+			function draw(event) {
+				var x = event.clientX - 6;
+				var y = event.clientY - 6;
+
+				if (lastX > -1 && lastY > -1 && doDraw) {
+					context.moveTo(lastX, lastY);
+					context.lineTo(x, y);
+          context.lineCap = 'round';
+          context.lineJoin = 'round'
+					context.stroke();
+				}
+
+				lastX = x;
+				lastY = y;
+			}
+
+			function enable() {
+				doDraw = true;
+			}
+
+			function disable() {
+				doDraw = false;
+			}
+
+		</script>
+    </body>
+</html>

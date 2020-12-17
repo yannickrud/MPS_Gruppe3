@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		</head
+		<link rel="stylesheet" href="./Sketching.css">
+	</head>
 	<body>
-		<canvas id="canvas" width="500" height="500" style="border: 1px solid black; cursor: crosshair;" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()">
+		<div>
 			<div id="thickness" onclick="changeThickness()">
-				3px
+				4px
 			</div>
-		</canvas>
+			<canvas id="canvas" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()"></canvas>
+		</div>
+
 
 
 		<script>
@@ -18,6 +21,8 @@
 			var lastY = -1;
 			var doDraw = false;
 
+			context.lineWidth = 4;
+
 			function draw(event) {
 				var x = event.clientX - 10;
 				var y = event.clientY - 10;
@@ -25,8 +30,8 @@
 				if (lastX > -1 && lastY > -1 && doDraw) {
 					context.moveTo(lastX, lastY);
 					context.lineTo(x, y);
-          context.lineCap = 'round';
-          context.lineJoin = 'round'
+          			context.lineCap = 'round';
+          			context.lineJoin = 'round';
 					context.stroke();
 				}
 
@@ -40,6 +45,11 @@
 
 			function disable() {
 				doDraw = false;
+			}
+
+			function changeThickness() {
+				lineWidth = (lineWidth + 3) % 11;
+				document.getElementById("thickness").innerHTML = lineWidth + "px";
 			}
 
 		</script>

@@ -10,13 +10,17 @@ body {
 }
 
 #canvas {
-    position: relative;
+    /*position: relative;*/
+    width: 1500px;
+    height: 500px;
+    border: 1px solid black;
+    cursor: crosshair;
 }
 
 #thickness {
-    position: absolute;
+    /*position: absolute;
     top: 20px;
-    left: 20px;
+    left: 20px;*/
 
     width: 30;
     height: 30;

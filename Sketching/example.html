@@ -4,53 +4,87 @@
 		<link rel="stylesheet" href="./Sketching.css">
 	</head>
 	<body>
+
 		<div>
-			<div id="thickness" onclick="changeThickness()">
-				4px
+			<div id="thickness">
+				<button id="incremntThickness" onclick="increaseThickness()">+</button>
+				<button id="decrementThickness" onclick="decreaseThickness()">-</button>
+				<form>
+				  <!-- <label for="kb_selected_color">Bitte Farbe wählen: </label> -->
+				  <input type="color" id="kb_selected_color">
+				  <span id="hex" style="visibility: hidden;">(#000000)</span>
+				</form>
 			</div>
-			<canvas id="canvas" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()"></canvas>
+			<canvas id="canvas" width="500px" height="500px" style="border= 1px solid black" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()"></canvas>
 		</div>
 
 
 
+
 		<script>
-			var canvas = document.getElementById("canvas");
-			var context = canvas.getContext("2d");
+		var canvas = document.getElementById("canvas");
+		var context = canvas.getContext("2d");
 
-			var lastX = -1;
-			var lastY = -1;
-			var doDraw = false;
+		var lastX = -1;
+		var lastY = -1;
+		var doDraw = false;
 
-			context.lineWidth = 4;
+		context.lineWidth = 4;
 
-			function draw(event) {
-				var x = event.clientX - 10;
-				var y = event.clientY - 10;
+		function draw(event) {
+			var x = event.clientX - 10;
+			var y = event.clientY - 10;
 
-				if (lastX > -1 && lastY > -1 && doDraw) {
-					context.moveTo(lastX, lastY);
-					context.lineTo(x, y);
-          			context.lineCap = 'round';
-          			context.lineJoin = 'round';
-					context.stroke();
-				}
+			let hex = document.getElementById("hex").innerHTML
 
-				lastX = x;
-				lastY = y;
+			if (lastX > -1 && lastY > -1 && doDraw) {
+				context.beginPath();
+				context.moveTo(lastX, lastY);
+				context.lineTo(x, y);
+				context.lineCap = 'round';
+				context.lineJoin = 'round';
+				context.strokeStyle = hex;
+				context.stroke();
 			}
 
-			function enable() {
-				doDraw = true;
-			}
+			lastX = x;
+			lastY = y;
+		}
 
-			function disable() {
-				doDraw = false;
-			}
+		function enable() {
+			doDraw = true;
+		}
 
-			function changeThickness() {
-				lineWidth = (lineWidth + 3) % 11;
-				document.getElementById("thickness").innerHTML = lineWidth + "px";
+		function disable() {
+			doDraw = false;
+		}
+
+		function increaseThickness() {
+			context.lineWidth++;
+			console.log(context.lineWidth);
+		}
+
+		function decreaseThickness() {
+			if (context.lineWidth > 1) {
+				context.lineWidth--;
 			}
+			console.log(context.lineWidth);
+		}
+
+
+					// Farbe aus ColorPicker auslesen
+		var theInput = document.getElementById("kb_selected_color");
+
+		var theColor = theInput.value;
+		theInput.addEventListener("input", function() {
+
+		// Farcode (Hex) schreiben
+		document.getElementById("hex").innerHTML = theInput.value;
+
+		// Farbvariable schreiben
+		document.documentElement.style.setProperty('--kb-color',theInput.value);
+
+		}, false);
 
 		</script>
     </body>

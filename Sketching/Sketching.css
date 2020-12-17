@@ -1,28 +1,34 @@
-@import "../html-snippets/navBar/navBar.css";
+/* @import "../html-snippets/navBar/navBar.css"; */
 
 html {
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     margin: 0;
     padding: 0;
-}
+} */
 
 #canvas {
     /*position: relative;*/
-    width: 1500px;
+    width: 500px;
     height: 500px;
     border: 1px solid black;
     cursor: crosshair;
 }
 
-#thickness {
-    /*position: absolute;
-    top: 20px;
-    left: 20px;*/
-
-    width: 30;
-    height: 30;
+#sketching_panel {
+    display: table;
+    width: 300;
+    height: 50;
     border: 1px solid black;
+}
+
+
+:root {
+  --kb-color: silver;
+}
+
+body {
+  background: var(--kb-color);
 }

@@ -3,15 +3,13 @@
     <head> <!-- Zusatzinfo für den Browser-->
         <title>MPS</title>
         <link rel="stylesheet" href="./Sketching.css"/>
-        <script src="../html-snippets/navBar/navBar.js"></script>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!-- Startseite -->
-    <body> <!-- Alles, was man sieht -->  
-
+    <body> <!-- Alles, was man sieht -->
         <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
-        <script src="../html-snippets/w3-include-HTML.js"></script>
 
 
         <!-- Erste Hälfte -->
@@ -19,5 +17,21 @@
             <h1 class="headline">Sketching</h1>
             <img src ="Sketching.jpeg" class="center">
         </div>
+
+        <div id="sketching_panel">
+            <div><button id="incremntThickness" onclick="increaseThickness()">+</button></div>
+            <div><button id="decrementThickness" onclick="decreaseThickness()">-</button></div>
+            <div><form>
+              <!-- <label for="kb_selected_color">Bitte Farbe wählen: </label> -->
+              <input type="color" id="kb_selected_color">
+              <span id="hex" style="visibility: hidden;">(#000000)</span>
+            </form></div>
+        </div>
+        <canvas id="canvas" width="500px" height="500px" style="border= 1px solid black" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()"></canvas>
+
+
+        <script src="../html-snippets/navBar/navBar.js"></script>
+        <script src="../html-snippets/w3-include-HTML.js"></script>
+        <script src="./Sketching.js"></script>
     </body>
 </html>

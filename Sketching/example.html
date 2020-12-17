@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		</head
 	<body>
 		<canvas id="canvas" width="500" height="500" style="border: 1px solid black; cursor: crosshair;" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()">
-			<div id="thickness" width="30" height="30" style="border: 1px solid black;" onclick="changeThickness()">
+			<div id="thickness" onclick="changeThickness()">
 				3px
 			</div>
 		</canvas>
@@ -17,8 +19,8 @@
 			var doDraw = false;
 
 			function draw(event) {
-				var x = event.clientX - 6;
-				var y = event.clientY - 6;
+				var x = event.clientX - 10;
+				var y = event.clientY - 10;
 
 				if (lastX > -1 && lastY > -1 && doDraw) {
 					context.moveTo(lastX, lastY);

@@ -8,8 +8,8 @@ var doDraw = false;
 context.lineWidth = 4;
 
 function draw(event) {
-    var x = event.clientX - 10;
-    var y = event.clientY - 10;
+    var x = event.clientX - canvas.offsetLeft;
+    var y = event.clientY - canvas.offsetTop;
 
     let hex = document.getElementById("hex").innerHTML
 
@@ -48,7 +48,7 @@ function decreaseThickness() {
 }
 
 
-            // Farbe aus ColorPicker auslesen
+// Farbe aus ColorPicker auslesen
 var theInput = document.getElementById("kb_selected_color");
 
 var theColor = theInput.value;

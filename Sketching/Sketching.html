@@ -13,25 +13,28 @@
 
 
         <!-- Erste Hälfte -->
+<!--
         <div id ="imgContainer">
             <h1 class="headline">Sketching</h1>
             <img src ="Sketching.jpeg" class="center">
         </div>
+-->
 
         <div id="sketching_panel">
             <div><button id="incremntThickness" onclick="increaseThickness()">+</button></div>
             <div><button id="decrementThickness" onclick="decreaseThickness()">-</button></div>
             <div><form>
-              <!-- <label for="kb_selected_color">Bitte Farbe wählen: </label> -->
-              <input type="color" id="kb_selected_color">
-              <span id="hex" style="visibility: hidden;">(#000000)</span>
-            </form></div>
+<!--                <label for="kb_selected_color">Bitte Farbe wählen: </label>-->
+                <input type="color"id="kb_selected_color">
+                <span id="hex">(#000000)</span>
+                </form></div>
         </div>
-        <canvas id="canvas" width="500px" height="500px" style="border= 1px solid black" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()"></canvas>
+        <canvas id="canvas" width="800px" height="500px" style="border= 1px solid black" onmousemove="draw(event)" onmousedown="enable()" onmouseup="disable()"></canvas>
 
 
         <script src="../html-snippets/navBar/navBar.js"></script>
         <script src="../html-snippets/w3-include-HTML.js"></script>
         <script src="./Sketching.js"></script>
+<!--        <script src="test.js"></script>-->
     </body>
 </html>

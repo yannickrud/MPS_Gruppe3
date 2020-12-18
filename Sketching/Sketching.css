@@ -1,34 +1,61 @@
-/* @import "../html-snippets/navBar/navBar.css"; */
+ @import "../html-snippets/navBar/navBar.css"; 
 
 html {
     scroll-behavior: smooth;
 }
 
-/* body {
+body {
     margin: 0;
     padding: 0;
-} */
+}
+
+#imgContainer {
+    padding-top: 50px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+.headline {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 6vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
 
 #canvas {
     /*position: relative;*/
-    width: 500px;
-    height: 500px;
     border: 1px solid black;
     cursor: crosshair;
 }
 
+
 #sketching_panel {
-    display: table;
+    padding-top: 2%;
     width: 300;
     height: 50;
     border: 1px solid black;
 }
 
+#sketching_panel button{
+    display: inline-block;
+    float: left;
+}
+
+#sketching_panel form{
+    display: inline-block;
+    float: left;
+}
 
 :root {
   --kb-color: silver;
 }
 
-body {
-  background: var(--kb-color);
-}
+
+

@@ -12,11 +12,11 @@ body {
 
 #imgContainer {
     background-color: d9b6b4;
-    padding-top: 50px;
+    padding-top: 2%;
 }
 
 img {
-    opacity: 0.8
+    opacity: 0.5
 }
 
 .responsiveImg {
@@ -56,7 +56,7 @@ img {
     background-color: #ffff66;
 
     padding-top: 2%;
-    
+
     align-content: center;
 
 }
@@ -72,4 +72,14 @@ img {
     width: 80%;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+.imgText {
+    overflow: scroll;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2vw;
 }

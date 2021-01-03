@@ -17,7 +17,12 @@ function draw(event) {
         context.strokeStyle = hex;
         context.stroke();
 
-        redrawnLines.push([lastX, lastY, x, y]);
+		line = {
+			stroke: context.lineWidth,
+			hex: hex,
+			coords: [lastX, lastY, x, y],
+		};
+        redrawnLines.push(line);
     }
 
     lastX = x;

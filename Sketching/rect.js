@@ -4,9 +4,9 @@ var originY = -1;
 var setOrigin = false;
 var doDrag = false;
 
-var currentLine;
+var currentRect;
 
-function dragLine(event) {
+function dragRect(event) {
 	var x = event.clientX - canvas.offsetLeft;
 	var y = event.clientY - canvas.offsetTop;
 
@@ -21,27 +21,26 @@ function dragLine(event) {
 	if (doDrag) {
 		redrawLines();
 		context.beginPath();
-		context.moveTo(originX, originY);
-		context.lineTo(x, y);
+		context.rect(originX, originY, x - originX, y - originY);
 		context.strokeStyle = hex;
 		context.stroke();
 
-		currentLine = {
+		currentRect = {
 			stroke: context.lineWidth,
 			hex: hex,
-			coords: [originX, originY, x, y],
-		};
+			coords: [originX, originY, x - originX, y - originY],
+		}
 	}
 }
 
-function startLine() {
+function startRect() {
 	setOrigin = true;
 	doDrag = true;
 }
 
-function drawLine() {
+function drawRect() {
 	doDrag = false;
 	originX = -1;
 	originY = -1;
-	redrawnLines.push(currentLine);
+	redrawnRects.push(currentRect);
 }

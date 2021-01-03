@@ -22,6 +22,6 @@ int main(void) {
 			return EXIT_FAILURE;
 		}
 		printf("request received\n");
-		fflush(stdin);
+		system("git pull");
 	}
 }

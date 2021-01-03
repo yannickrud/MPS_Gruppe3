@@ -21,7 +21,7 @@ int main(void) {
 			perror("accept");
 			return EXIT_FAILURE;
 		}
-		printf("request received\n");
+		system("date");
 		system("git pull");
 	}
 }

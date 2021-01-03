@@ -2,6 +2,7 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 #define PORT 39666
 
@@ -17,10 +18,12 @@ int main(void) {
 	bind(sock, (struct sockaddr *) &address, sizeof(address));
 	listen(sock, SOMAXCONN);
 	while (1) {
-		if (accept(sock, NULL, NULL) == -1) {
+		int clsock = accept(sock, NULL, NULL);
+		if (clsock == -1) {
 			perror("accept");
 			return EXIT_FAILURE;
 		}
+		close(clsock);
 		system("date");
 		system("git pull");
 	}

@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <h1>Sketching</h1>
 <!--        <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>-->
 
 
@@ -18,6 +19,109 @@
             <img src ="Sketching.jpeg" class="center">
         </div>
 -->
+
+        <button button id="AufgabenButton" onclick="plusAufgaben(1)">Klicke für Beispiel-Themen</button>
+
+        <div class="myAufgaben fade">
+            <div class="AufgabenText">
+        Zitat: Kein Mensch ist so beschäftigt, dass er nicht die Zeit hat, überall zu erzählen, wie beschäftigt er ist. </div>
+        </div>
+
+        <div class="myAufgaben fade">
+            <div class="AufgabenText">
+        Coronavirus  
+        </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText">        
+        Trump 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Zitat: Man ist meistens nur durch Nachdenken unglücklich 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Tierversuche (Sollen Tierversuche verboten werden?) 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Impfpflicht (Brauchen wir eine Impfpflicht?) 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Brauchen wir den 6-Stunden-Arbeitstag? 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        US-Wahl 2020 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Digitalisierung 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Brexit 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        WHO 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Zitat: Die Leute streiten im allgemeinen nur deshalb, weil sie nicht diskutieren können. 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Klimawandel 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Lockdown 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Social Media
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        Wirecard Skandal 
+            </div>
+        </div>
+        <div class="myAufgaben fade">
+            <div class="AufgabenText"> 
+        George Floyd
+            </div>
+        </div>
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusAufgaben(-1)">&#10094;</a>
+        <a class="next" onclick="plusAufgaben(1)">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentAufgaben(1)"></span> 
+            <span class="dot" onclick="currentAufgaben(2)"></span> 
+            <span class="dot" onclick="currentAufgaben(3)"></span>
+            <span class="dot" onclick="currentAufgaben(4)"></span>
+        </div>
+    </div>
+
+    <script src="themen.js"></script>
 
         <div id="sketching_panel">
             <div><button id="incremntThickness" onclick="increaseThickness()">+</button></div>

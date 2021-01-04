@@ -75,7 +75,8 @@ img {
 }
 
 .imgText {
-    overflow: scroll;
+    text-shadow: 2px 2px 5px black;
+    overflow: hidden;
     position: absolute;
     top: 40%;
     left: 50%;

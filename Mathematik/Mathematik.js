@@ -29,14 +29,15 @@ var op;
 function init() {
 	document.getElementById("result_input").value = "";
 
-	a = random(20, 200);
-	b = random(20, 200);
+	let opIndex = random(0, operations.length);
+	op = operations[opIndex];
+
+	a = getLeftOperand(op);
+	b = getRightOperand(op);
 
 	document.getElementById("left_operand").innerHTML = a;
 	document.getElementById("right_operand").innerHTML = b;
 
-	let opIndex = random(0, operations.length);
-	op = operations[opIndex];
 
 	document.getElementById("operator").innerHTML = op.operator;
 
@@ -59,9 +60,41 @@ function submit() {
 }
 
 function showSolution() {
-	answer = a + op.operator + b + "=" + c;
+	answer = a + " " + op.operator + " " + b + " = " + c;
 	document.getElementById("feedback").innerHTML = answer;
 	init();
+}
+
+var divisor;
+
+function getLeftOperand(op) {
+	switch (op.name) {
+		case "add":
+		case "subtract":
+			return random(20, 200);
+
+		case "multiply":
+			return random(20, 100);
+
+		case "divide":
+			divisor = random(2, 10);
+			let x = random(2, 20);
+			return divisor * x;
+	}
+}
+
+function getRightOperand(op) {
+	switch (op.name) {
+		case "add":
+		case "subtract":
+			return random(20, 200);
+
+		case "multiply":
+			return random(2, 10);
+
+		case "divide":
+			return divisor;
+	}
 }
 
 function random(lower, upper) {

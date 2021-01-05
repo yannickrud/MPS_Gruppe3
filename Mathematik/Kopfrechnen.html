@@ -1,0 +1,37 @@
+
+    <head> <!-- Zusatzinfo für den Browser-->
+        <title>MPS</title>
+        <link rel="stylesheet" href="Kopfrechnen.css"/>
+        <script src="../html-snippets/navBar/navBar.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- Startseite -->
+    <body onload="init()"> <!-- Alles, was man sieht -->  
+
+    <h1>Kopfrechnen</h1>
+
+    <p>Kennst das Problem: Du möchtest gerade etwas ausrechnen, aber hast keinen Taschenrechner parat? 
+        Gar nicht so einfach und ziemlich zeitintensiv oder?
+        Denn heutzutage wird viel zu viel mit dem Taschenrechner gerechnet.
+        Es ist dennoch wichtig regelmäßig ein Paar Matheaufgaben im Kopf auszurechnen, damit dein logisches Denken und deine Konzentrationsfähigkeit gesteigert werden.
+        Hier bieten wir dir ein Paar Beispiel-Aufgaben.
+    </p>
+
+    <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
+    <script src="../html-snippets/w3-include-HTML.js"></script>
+
+        <script src="Mathematik.js"></script>
+
+		<span id="left_operand">a</span>
+		<span id="operator">+</span>
+		<span id="right_operand">b</span>
+		<span>=</span>
+        <input id="result_input"></input>
+        <br>
+        <br>
+        <br>
+		<button id="submit_button" onclick="submit()">Submit</button>
+		<button id="solution_button" onclick="showSolution()">Solution</button>
+		<span id="feedback"></span>
+    </body>

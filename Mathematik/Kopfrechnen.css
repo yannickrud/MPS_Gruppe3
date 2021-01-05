@@ -1,0 +1,40 @@
+@import "../html-snippets/navBar/navBar.css";
+
+html {
+    scroll-behavior: smooth;
+    text-align: center;
+    background-color: bisque;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size: 1,5vw;
+}
+span{
+
+    font-size: 2em;
+}
+
+input{
+    padding: 0,5em 2em;
+    font-size: 2em;
+}
+button {
+
+    padding: 1em 2em;
+    font-size: 2em;
+
+}

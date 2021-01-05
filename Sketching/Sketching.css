@@ -2,6 +2,8 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: rgb(18, 143, 143);
+    text-align: center;
 }
 
 body {
@@ -33,6 +35,7 @@ body {
     /*position: relative;*/
     border: 1px solid black;
     cursor: crosshair;
+    background-color: whitesmoke;
 }
 
 
@@ -41,6 +44,8 @@ body {
     width: 300;
     height: 50;
     border: 1px solid black;
+    align-content: center;
+    align-items: center;
 }
 
 #sketching_panel button{

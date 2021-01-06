@@ -9,6 +9,9 @@
     <!-- Startseite -->
     <body onload="init()"> <!-- Alles, was man sieht -->  
 
+    <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
+    <script src="../html-snippets/w3-include-HTML.js"></script>
+
     <h1>Kopfrechnen</h1>
 
     <p>Kennst das Problem: Du möchtest gerade etwas ausrechnen, aber hast keinen Taschenrechner parat? 
@@ -18,21 +21,18 @@
         Hier bieten wir dir ein Paar Beispiel-Aufgaben.
     </p>
 
-    <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
-    <script src="../html-snippets/w3-include-HTML.js"></script>
+    <script src="Kopfrechnen.js"></script>
+    <script src="utils.js"></script>
 
-        <script src="Kopfrechnen.js"></script>
-        <script src="utils.js"></script>
-
-		<span id="left_operand">a</span>
-		<span id="operator">+</span>
-		<span id="right_operand">b</span>
-		<span>=</span>
-        <input id="result_input"></input>
-        <br>
-        <br>
-        <br>
-		<button id="submit_button" onclick="submit()">Submit</button>
-		<button id="solution_button" onclick="showSolution()">Solution</button>
-		<span id="feedback"></span>
+	<span id="left_operand">a</span>
+	<span id="operator">+</span>
+	<span id="right_operand">b</span>
+	<span>=</span>
+    <input id="result_input"></input>
+    <br>
+    <br>
+    <br>
+	<button id="submit_button" onclick="submit()">Submit</button>
+	<button id="solution_button" onclick="showSolution()">Solution</button>
+	<span id="feedback"></span>
     </body>

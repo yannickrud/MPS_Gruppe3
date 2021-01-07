@@ -49,7 +49,6 @@ function submit() {
 
 	if (submission == c) {
 		feedback.innerHTML = "correct";
-		init();
 	}
 	else {
 		feedback.innerHTML = "wrong answer";

@@ -1,16 +1,21 @@
-var ops = [];
+var ops;
 var current;
-var currentIndex = -1;
+var currentIndex;
 
 var c;
 
 function init() {
+	document.getElementById("result_input").value = "";
+	document.getElementById("feedback").innerHTML = "";
+
 	let nOperations = random(1, 4);
-	let minOperand = (nOperations == 1)? 20 : 1;
-	let maxOperand = 100;
+	let minOperand = 1;
+	let maxOperand = 11;
 
 	current = random(minOperand, maxOperand);
+	currentIndex = -1;
 
+	ops = [];
 	for (var i = 0; i < nOperations; i++) {
 		let opIndex = random(0, 2); //only addition/subtraction
 		ops[i] = {
@@ -23,6 +28,12 @@ function init() {
 
 	setNumbers(7);
 	c = getNext();
+}
+
+function showSolution() {
+	let numbers = document.getElementById("numbers").innerHTML;
+	let answer = numbers + " -> " + c;
+	document.getElementById("feedback").innerHTML = answer;
 }
 
 function setNumbers(count) {

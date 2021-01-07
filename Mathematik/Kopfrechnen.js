@@ -6,6 +6,7 @@ var op;
 
 function init() {
 	document.getElementById("result_input").value = "";
+	document.getElementById("feedback").innerHTML = "";
 
 	let opIndex = random(0, operations.length);
 	op = operations[opIndex];
@@ -26,7 +27,6 @@ function init() {
 function showSolution() {
 	answer = a + " " + op.operator + " " + b + " = " + c;
 	document.getElementById("feedback").innerHTML = answer;
-	init();
 }
 
 var divisor;

@@ -11,9 +11,10 @@
     <body>
         <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
         <script src="../html-snippets/w3-include-HTML.js"></script>
-        <div id = "Content">
-        <h1>Sketching</h1>
 
+
+        <div style="text-align: center; width: 100%;">
+        <h1>Sketching</h1>
 
 
         <script src="themen.js"></script>
@@ -21,7 +22,7 @@
         <button id="AufgabenButton" onclick="showAufgaben()">Klicke für Beispiel-Themen</button>
 
 
-        <div style="text-align:center">
+        <div>
             <span id = "Aufgaben"></span>
         </div>
 
@@ -31,18 +32,17 @@
             <div><button id="incremntThickness" onclick="increaseThickness()">+</button></div>
             <div><button id="decrementThickness" onclick="decreaseThickness()">–</button></div>
             <div><form>
-                <input type="color"id="kb_selected_color">
+                <input type="color" id="kb_selected_color">
                 <span id="hex">#000000</span>
                 </form></div>
             <div><button id="drawTool" onclick="setDraw()">Draw</button></div>
-        	<div><button id="lineTool" onclick="setLine()">Line</button></div>
+		<div><button id="lineTool" onclick="setLine()">Line</button></div>
         	<div><button id="rectTool" onclick="setRect()">Rectangle</button></div>
         	<div><button id="ellipseTool" onclick="setEllipse()">Ellipse</button></div>
         </div>
-        <canvas id="canvas" width="800px" height="500px" style="border= 1px solid black" onmousemove="mouseMove(event)" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()"></canvas>
 
-<!--        <script src="../html-snippets/navBar/navBar.js"></script>-->
-<!--        <script src="../html-snippets/w3-include-HTML.js"></script>-->
+        <canvas id="canvas" width="800" height="600" onmousemove="mouseMove(event)" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()"></canvas>
+
         <script src="./draw.js"></script>
         <script src="./line.js"></script>
         <script src="./rect.js"></script>

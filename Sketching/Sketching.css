@@ -6,23 +6,9 @@ html {
     
 }
 
-Content{
-    text-align: center;
-}
-
 body {
     margin: 0;
     padding: 0;
-}
-
-#imgContainer {
-    padding-top: 50px;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
 }
 
 .headline {
@@ -34,37 +20,32 @@ body {
     margin: 0;
 }
 
-
 #canvas {
-    /*position: relative;*/
     border: 1px solid black;
     cursor: crosshair;
     background-color: whitesmoke;
 }
 
-
 #sketching_panel {
-    padding-top: 2%;
-    width: 300;
-    height: 50;
-    border: 1px solid black;
-    align-content: center;
-    align-items: center;
+    height: 2em;
+    border: 3px solid red;
+    text-align: left;
 }
 
 #sketching_panel button{
-    display: inline-block;
+    position: relative;
     float: left;
+    left: 25%;
+    height: 2em;
 }
 
 #sketching_panel form{
-    display: inline-block;
+    position: relative;
     float: left;
+    left: 25%;
+    height: 2em;
 }
 
 :root {
   --kb-color: silver;
 }
-
-
-

@@ -2,7 +2,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: bisque;
+    background-color: rgb(151, 118, 81);
 }
 
 body {
@@ -19,23 +19,4 @@ h1 {
     text-align: center;
     padding: 0;
     margin: 0;
-}
-
-p{
-    font-size: 2vw;
-}
-span{
-
-    font-size: 2em;
-}
-
-input{
-    padding: 0,5em 2em;
-    font-size: 2em;
-}
-button {
-
-    padding: 1em 2em;
-    font-size: 2em;
-
 }

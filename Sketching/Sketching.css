@@ -3,6 +3,10 @@
 html {
     scroll-behavior: smooth;
     background-color: rgb(18, 143, 143);
+    
+}
+
+Content{
     text-align: center;
 }
 

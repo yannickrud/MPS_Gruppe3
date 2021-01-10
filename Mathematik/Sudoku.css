@@ -2,29 +2,22 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: rgb(162, 185, 119);
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-size: large;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
-}
 
-.headline {
+
+h1 {
     color: black;
     text-shadow: 2px 2px 5px black;
-    font-size: 6vw;
+    font-size: 4vw;
     text-align: center;
     padding: 0;
     margin: 0;
-}
-
-#imgContainer {
-    padding-top: 50px;
 }

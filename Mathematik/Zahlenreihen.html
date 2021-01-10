@@ -1,0 +1,32 @@
+
+    <head> <!-- Zusatzinfo für den Browser-->
+		<title>MPS</title>
+		<link rel="stylesheet" href="Zahlenreihen.css"/>
+        <script src="../html-snippets/navBar/navBar.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!-- Startseite -->
+	<body onload="init()"> <!-- Alles, was man sieht -->  
+		
+		<h1>Zahlenreihen</h1>
+
+		<p>Löse folgende Zahlenreihe. </p>
+		<br>
+		<p>Vorgehensweise: Welche Zahl musst du addieren, um von Zahl 1 auf Zahl 2 zu kommen? Diese Zahl addierst du mit der Zahl, die du addieren musst, um von Zahl 2 auf Zahl 3 zu kommen usw.</p>
+
+		<style>@import "../html-snippets/navBar/navBar.css"</style> <!--TODO: diese Zeile löschen, wenn es eine richtige .css für Zahlenreihen gibt -->
+	    <div w3-include-HTML="../html-snippets/navBar/navBar.html"></div>
+	    <script src="../html-snippets/w3-include-HTML.js"></script>
+
+	    <script src="Zahlenreihen.js"></script>
+	    <script src="utils.js"></script>
+
+		<span id="numbers"></span>
+	    <input id="result_input"></input>
+		<button id="submit_button" onclick="submit()">Submit</button>
+		<button id="solution_button" onclick="showSolution()">Solution</button>
+		<button id="next_button" onclick="init()">Next</button>
+		<span id="feedback"></span>
+
+    </body>

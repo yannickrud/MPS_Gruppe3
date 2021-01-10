@@ -13,24 +13,31 @@ body {
 
 #imgContainer {
     background-color: d9b6b4;
-    padding-top: 50px;
+    padding-top: 2%;
 }
 
 img {
-    opacity: 0.8
+    opacity: 0.5
+}
+
+.responsiveImg {
+    width: 70%;
+    height: auto;
+    max-width: 800;
+
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
 }
 
 #Hintergrund1 {
     width: 100%;
     background-color: d9b6b4;
-    height: 100%;
+    height: auto;
     padding-bottom: 50px;
 }
 
@@ -45,154 +52,38 @@ img {
 
 #window2 {
     width: 100%;
-    height: 100%;
+    height: auto;
     border: 2px solid #ffff66;
     background-color: #ffff66;
+
+    padding-top: 2%;
+
+    align-content: center;
+
 }
 
-    #Einfuehrungstext {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #EinfuehrungsTextBox {
-        height: 50%;
-        background-color: pink;
-        width: 80%;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
-
-.themenfeld {
-    border: 4px solid grey;
-    float: left;
-    box-sizing: border-box;
-    height: 3em;
-    line-height: 2.75em;
-    width: 33.33%;
-    background-color: lightgrey;
-    text-align: center;
-    font-size: 25px;
-    font-family: "Times New Roman", Times, serif;
-    margin-right: 1%;
-    margin-top: 2%;
-    margin-left: 10%
+#Einfuehrungstext {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.themenfeld div {
-    max-width: 80%;
-    border: 3px solid black;
-    margin: 0 auto;
-    word-wrap: break-word;
-    margin-right: 2%;
-    margin-top: 2%;
-}
-
-#themenfeldbox{
-    width: 100%;
-    background-color: aqua;
-}
-
-#ThemenauswahlTextBox {
-    background-color: #ffff66;
+#EinfuehrungsTextBox {
+    height: 50%;
+    background-color: pink;
     width: 80%;
     margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 5%;
-    min-height: 30%;
-    border: 3px solid black;
+    border-radius: 10px;
 }
 
-#Themenauswahl {
-    color: grey;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: "Times New Roman", Times, serif;
-}
-
-@media (max-width: 721px) {
-    .themenfeld {
-        float: none;
-        width: 80%;
-        margin: 0 auto;
-        height: 4em;
-    }
-
-    .themenfeld div {
-        height: 3em;
-    }
-}
-
-.themenfeldzweitereihe {
-    border: 4px solid grey;
-    float: left;
-    box-sizing: border-box;
-    height: 3em;
-    line-height: 2.75em;
-    width: 33.33%;
-    background-color: lightgrey;
-    text-align: center;
-    font-size: 25px;
-    font-family: "Times New Roman", Times, serif;
-    margin-right: 1%;
-    margin-top: 2%;
-    margin-left: 10%
-}
-
-.themenfeldzweitereihe div {
-    max-width: 80%;
-    border: 3px solid black;
-    margin: 0 auto;
-    word-wrap: break-word;
-}
-
-@media (max-width: 721px) {
-    .themenfeldzweitereihe {
-        float: none;
-        width: 80%;
-        margin: 0 auto;
-        height: 4em;
-    }
-
-    .themenfeldzweitereihe div {
-        height: 3em;
-    }
-}
-
-.themenfelddrittereihe {
-    border: 4px solid grey;
-    float: left;
-    box-sizing: border-box;
-    height: 3em;
-    line-height: 2.75em;
-    width: 33.33%;
-    background-color: lightgrey;
-    text-align: center;
-    font-size: 25px;
-    font-family: "Times New Roman", Times, serif;
-    margin-right: 1%;
-    margin-top: 2%;
-    margin-left: 10%
-}
-
-.themenfelddrittereihe div {
-    max-width: 80%;
-    border: 3px solid black;
-    margin: 0 auto;
-    word-wrap: break-word;
-}
-
-@media (max-width: 721px) {
-    .themenfelddrittereihe {
-        float: none;
-        width: 80%;
-        margin: 0 auto;
-        height: 4em;
-    }
-
-    .themenfelddrittereihe div {
-        height: 3em;
-    }
+.imgText {
+    text-shadow: 2px 2px 5px black;
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2vw;
 }
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
   $responsive-unitless: $responsive / ($responsive - $responsive + 1);

@@ -2,16 +2,18 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 80%;
+    max-width: 100%;
     position: relative;
     margin: auto;
-    padding-top: 50px;
+    width: 90%;
+    scroll-behavior: none;
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
     text-align: center;
+    scroll-behavior: none;
 }
 
 /* Next & previous buttons */

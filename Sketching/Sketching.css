@@ -1,10 +1,51 @@
-@import "../html-snippets/navBar/navBar.css";
+ @import "../html-snippets/navBar/navBar.css"; 
 
 html {
     scroll-behavior: smooth;
+    background-color: rgb(18, 143, 143);
+    
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+.headline {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 6vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#canvas {
+    border: 1px solid black;
+    cursor: crosshair;
+    background-color: whitesmoke;
+}
+
+#sketching_panel {
+    height: 2em;
+    border: 3px solid red;
+    text-align: left;
+}
+
+#sketching_panel button{
+    position: relative;
+    float: left;
+    left: 25%;
+    height: 2em;
+}
+
+#sketching_panel form{
+    position: relative;
+    float: left;
+    left: 25%;
+    height: 2em;
+}
+
+:root {
+  --kb-color: silver;
 }

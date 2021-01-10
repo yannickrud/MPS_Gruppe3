@@ -21,50 +21,45 @@
         <div id="Hintergrund1"> <!-- Der Hintergrund des ersten Fensters auf der Startseite -->
             <h1 class="headline"> Willkommen </h1>
             <div id="EinfuehrungsTextBox"> <!-- In dieses Textfeld, kommt die Beschreibung der Seite -->
-                <p id="Einfuehrungstext"> Diese Seite wurde erstellt, dass Deine Konzentrationsfähigkeit und Kreativität durch vielfältige Aufgaben gesteigert wird. Wir bieten Dir spannende   Übungen aus den Bereichen Yoga, Kunst, Mathematik...</p>
+                <p class="Einfuehrungstext"> Diese Seite wurde erstellt, dass Deine Konzentrationsfähigkeit und Kreativität durch vielfältige Aufgaben gesteigert wird. Wir bieten Dir spannende   Übungen aus den Bereichen Yoga, Kunst, Mathematik...</p>
             </div>    <!--			<a href="#window2"><button id="button">Start</button></a>-->
         </div>
         <!-- Zweite Hälfte -->
         <div id="window2">
-            <!--
-<div id="ThemenauswahlTextBox">
-<p id="Themenauswahl"> Such dir das Thema aus, das dich am meisten interessiert.</p>
-</div>
--->
             <!--            https://www.w3schools.com/howto/howto_js_slideshow.asp-->
-            <div class="slideshow-container">
+            <div class="slideshow-container videopadding">
                 <div class="mySlides fade">
                     <a href="#mathe">
-                        <img src="../Mathematik/Mathe.jpg">
+                        <img src="../Mathematik/Mathe.jpg" class="responsiveImg">
                     </a>
-                    <div class="text">
-                        Mathematik</div>
+                    <div class="imgText">
+                        Mathematik & Rätsel:
+                        Hier findest du Aufgaben im Bereich Mathematik und Rätsel. Wir haben Kopfrechenaufgaben, Sudokus, und viele weitere interessante Aufgaben, um deine Konzentrationsfähigkeit zu steigern. 
+                    </div>
                 </div>
                 <div class="mySlides fade">
                     <a href="#meditation">
-                        <img src="../Meditation/Meditation.jpg">
+                        <img src="../Meditation/Meditation.jpg" class="responsiveImg">
                     </a>
-                    <div class="text">Meditation</div>
+                    <div class="imgText">Meditation &  Yoga:
+                        Schalte ab und mache deinen Kopf frei. Gönn dir eine Pause, danach bist du viel effektiver! Schaue vorbei um mehr zu erfahren.
+                    </div>
                 </div>
                 <div class="mySlides fade">
                     <a href="#sketching">
-                        <img src="../Sketching/Sketching.jpeg">
+                        <img src="../Sketching/Sketching.jpeg" class="responsiveImg">
                     </a>
-                    <div class="text">Sketching</div>
+                    <div class="imgText">Sketching:
+                    Hier kannst du deinen Gedanken freien lauf lassen. Entweder du skizzierst etwas, das dir selbst gefällt oder wenn du keine eigenen Ideen hast, haben wir Themenfelder für dich vorbereitet. Erstelle eine Mindmap, gerne auch im Team!</div>
                 </div>
                 <div class="mySlides fade">
                     <a href="#raetsel">
-                        <img src="../Rätsel/Rätsel.jpg">
+                        <img src="../Rätsel/Rätsel.jpg" class="responsiveImg">
                     </a>
-                    <div class="text">Rätsel</div>
+                    <div class="imgText">Rätsel
+                    Lorem ipsum dolor sit amet, </div>
                 </div>
-                <div class="mySlides fade">
-                    <a href="#design thinking">
-                        <img src="../Design Thinking/DesignThinking.jpg">
-                    </a>
-                    <div class="text">Design Thinking</div>
-                </div>
-
+                
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -75,14 +70,13 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
                 </div>
             </div>
 
             <script src="../html-snippets/slideShow/slideShow.js"></script>
             <script src="./Buttons/Buttons.js"></script>
 
-            <!--            https://codepen.io/terned/pen/bRPmQg-->
+            <!--   https://codepen.io/terned/pen/bRPmQg-->
 
         </div>
         <div class="button-group">

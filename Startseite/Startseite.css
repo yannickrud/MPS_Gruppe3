@@ -1,6 +1,5 @@
 @import "../html-snippets/navBar/navBar.css";
 @import "../html-snippets/slideShow/slideShow.css";
-@import "./test.css";
 
 html {
     scroll-behavior: smooth;

@@ -1,5 +1,15 @@
 var id = document.getElementById("buttons");
-var items = id.getElementsByTagName("div");
+try{
+    var items = id.getElementsByTagName("DIV");
+} catch (e){
+
+    for (var i = 0;i < items.length; i++){
+        console.log(items[i])
+    }
+    console.log(e)
+}
+    
+
 
 var current = 0;
 

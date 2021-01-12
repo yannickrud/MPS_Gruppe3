@@ -24,8 +24,6 @@ function init() {
 		};
 	}
 
-	console.log(ops);
-
 	setNumbers(7);
 	c = getNext();
 }

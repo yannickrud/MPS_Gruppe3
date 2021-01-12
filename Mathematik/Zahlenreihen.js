@@ -32,7 +32,7 @@ function init() {
 
 function showSolution() {
 	let numbers = document.getElementById("numbers").innerHTML;
-	let answer = numbers + " -> " + c;
+	let answer = numbers + " &#8594; " + c;
 	document.getElementById("feedback").innerHTML = answer;
 }
 

@@ -48,9 +48,9 @@ function submit() {
 	feedback = document.getElementById("feedback");
 
 	if (submission == c) {
-		feedback.innerHTML = "correct";
+		feedback.innerHTML = "Super, deine Antwort ist richtig!";
 	}
 	else {
-		feedback.innerHTML = "wrong answer";
+		feedback.innerHTML = "Schade, deine Anwort ist leider falsch &#x1F641; Versuche es erneut oder lasse die Lösung anzeigen.";
 	}
 }

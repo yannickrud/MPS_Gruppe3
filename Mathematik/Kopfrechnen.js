@@ -26,7 +26,7 @@ function init() {
 
 function showSolution() {
 	answer = a + " " + op.operator + " " + b + " = " + c;
-	document.getElementById("feedback").innerHTML = answer;
+	document.getElementById("result_input").innerHTML = answer;
 }
 
 var divisor;

@@ -20,13 +20,12 @@
         <script src="themen.js"></script>
 
         <button id="AufgabenButton" onclick="showAufgaben()">Klicke für Beispiel-Themen</button>
-
-
+        <br>
+        <br>
         <div>
             <span id = "Aufgaben"></span>
         </div>
-
-
+        <br>
 
         <div id="sketching_panel">
             <div><button id="incremntThickness" onclick="increaseThickness()">+</button></div>
@@ -40,8 +39,9 @@
         	<div><button id="rectTool" onclick="setRect()">Rectangle</button></div>
         	<div><button id="ellipseTool" onclick="setEllipse()">Ellipse</button></div>
         </div>
+        <br>
 
-        <canvas id="canvas" width="800" height="600" onmousemove="mouseMove(event)" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()"></canvas>
+        <canvas style="text-align: center;"  id="canvas" width="800" height="600" onmousemove="mouseMove(event)" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()"></canvas>
 
         <script src="./draw.js"></script>
         <script src="./line.js"></script>

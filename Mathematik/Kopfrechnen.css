@@ -30,12 +30,12 @@ span{
 }
 
 input{
-    padding: 0,5em 2em;
+    padding: 2px;
     font-size: 2em;
 }
 button {
 
-    padding: 1em 2em;
+    padding: 2px 2px;
     font-size: 2em;
 
 }

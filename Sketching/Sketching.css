@@ -29,20 +29,21 @@ body {
 #sketching_panel {
     height: 2em;
     border: 3px solid red;
-    text-align: left;
+    text-align: center;
 }
 
 #sketching_panel button{
     position: relative;
     float: left;
-    left: 25%;
+    left: 37%;
     height: 2em;
+    
 }
 
 #sketching_panel form{
     position: relative;
     float: left;
-    left: 25%;
+    left: 37%;
     height: 2em;
 }
 

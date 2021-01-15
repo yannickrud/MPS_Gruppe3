@@ -1,32 +1,13 @@
-/* Style the navbar */
-
-
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar {
 /*      overflow: hidden;*/
     background-color: #333;
-    min-height: 48px;
-    z-index: 9999
-}
-
-/* Navbar links */
-#navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-/* Page content */
-.content {
-    margin: 0;
-    padding: 0;
+    min-height: 3em;
+    z-index: 9999;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -36,65 +17,74 @@ body {
     width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
-.sticky + .content {
-    padding-top: 60px;
-}
-
-/* The dropdown container */
-.dropdown {
-/*    float: left;*/
-/*    overflow: hidden;*/
-    
-    
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px; 
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-#navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: d9b6b4;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.parent {
+    z-index: inherit;
+    min-height: 3em;
+    text-align: center;
+    font-size: 16px;
     display: block;
-    text-align: left;
+    position: relative;
+    float: left;
+    line-height: 3em;
+    background-color: #333;
+    border-right:#333 1px solid;
+}
+.parent a{
+    z-index: inherit;
+    margin: 10px;
+    height: 100%;
+    line-height: 3em;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: greenyellow;
+.parent:hover > ul {
+    display:block;
+    position:absolute;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: grid;
+.child {
+    display: none;
 }
 
+.child li {
+    z-index: inherit;
+    padding: 0px;
+    background-color: #333;
+    line-height: 3em;
+    border: #333 1px solid;
+    width:100%;
+}
+.child li a{
+    z-index: inherit;
+    color: #f2f2f2;
+    margin: 0px; 
+    display: block; 
+    width: 100%; 
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    min-width:10em;
+}
+
+ul ul ul{
+    left: 100%;
+    top: 0;
+    margin-left:1px;
+}
+
+li:hover {
+    background-color: #d9b6b4;
+}
+.parent li:hover {
+    background-color: #d9b6b4;
+}
+.expand{
+    font-size:12px;
+    float:right;
+    margin-right:5px;
+}

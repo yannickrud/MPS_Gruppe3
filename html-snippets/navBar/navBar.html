@@ -1,33 +1,30 @@
-    <head> <!-- Zusatzinfo für den Browser-->
-        <title>MPS</title>
-        <link rel="stylesheet" href="./navBar.css"/>
-        <script src="navBar.js"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <!-- Startseite -->
-    <body> <!-- Alles, was man sieht -->
-<div id="navbar">
-    <div class="dropdown">
-        <button class="dropbtn">Los</button>
-        <div class="dropdown-content">
-            <a href="../Startseite/Startseite.html">Startseite</a>
-            <!--<a href="../Mathematik/Mathematik.html">Mathematik und Rätsel</a>-->
-            <a href="../Mathematik/Kopfrechnen.html">Kopfrechnen</a>
-            <a href="../Mathematik/Zahlenreihen.html">Zahlenreihen</a>
-            <a href="../Mathematik/Sudoku.html">Sudoku</a>
-            <a href="../Meditation/Meditation.html">Meditation</a>
-            <a href="../Sketching/Sketching.html">Sketching</a>
-            <!-- <a href="../Rätsel/Rätsel.html">Rätsel</a>  -->
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Über</button>
-        <div class="dropdown-content">
-            <a href="#3">Warum?</a>
-            <a href="#1">Wie funktioniert's?</a>
-        </div>
-    </div>
+<head>
+    <link rel="stylesheet" href="./navBar.css"/>
+    <script src="navBar.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <ul id="navbar">
+        <li class="parent"><a href="#">Los</a>
+            <ul class="child">
+                <li><a href="../Startseite/Startseite.html">Startseite</a></li>
+                <li class="parent"><a href="#">Rätsel <span class="expand">»</span></a>
+                    <ul class="child">
+                        <li><a href="../Mathematik/Kopfrechnen.html">Kopfrechnen</a></li>
+                        <li><a href="../Mathematik/Zahlenreihen.html">Zahlenreihen</a></li>
+                    </ul>
+                </li>
 
-</div>
+                <li><a href="../Meditation/Meditation.html">Meditation</a></li>
+                <li><a href="../Sketching/Sketching.html">Sketching</a></li>
+            </ul>
+        </li>
+        <li class="parent"><a href="#">Über</a>
+            <ul class="child">			
+                <li><a href="#warum">Warum</a></li>
+                <li><a href="#wie funktionierts">Wie funktioniert's?</a></li>
+            </ul>
+        </li>
+    </ul>
 </body>

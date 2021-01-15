@@ -14,46 +14,46 @@
 
 
         <div style="text-align: center; width: 100%;">
-        <h1>Sketching</h1>
+            <h1>Sketching</h1>
 
 
-        <script src="themen.js"></script>
+            <script src="themen.js"></script>
 
-        <button id="AufgabenButton" onclick="showAufgaben()">Klicke für Beispiel-Themen</button>
-        <br>
-        <br>
-        <div>
-            <span id = "Aufgaben"></span>
+            <button id="AufgabenButton" onclick="showAufgaben()">Klicke für Beispiel-Themen</button>
+            <br>
+            <br>
+            <div>
+                <span id = "Aufgaben"></span>
+            </div>
+            <br>
+
+            <div id="sketching_panel">
+                <div><button id="incremntThickness" onclick="increaseThickness()">+</button></div>
+                <div><button id="decrementThickness" onclick="decreaseThickness()">–</button></div>
+                <div><form>
+                    <input type="color" id="kb_selected_color">
+                    <span id="hex">#000000</span>
+                    </form></div>
+                <div><button id="drawTool" onclick="setDraw()">Draw</button></div>
+                <div><button id="lineTool" onclick="setLine()">Line</button></div>
+                <div><button id="rectTool" onclick="setRect()">Rectangle</button></div>
+                <div><button id="ellipseTool" onclick="setEllipse()">Ellipse</button></div>
+            </div>
+            <br>
+
+            <canvas style="text-align: center;"  id="canvas" width="800" height="600" onmousemove="mouseMove(event)" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()"></canvas>
+
+            <script src="./draw.js"></script>
+            <script src="./line.js"></script>
+            <script src="./rect.js"></script>
+            <script src="./ellipse.js"></script>
+            <script src="./Sketching.js"></script>
+
+            <br>
+            <br>
+            <p> Hier kannst du deinen Gedanken freien Lauf lassen und dir zu beliebigem Thema Mindmaps erstellen...</p>
+            <br>
+
         </div>
-        <br>
-
-        <div id="sketching_panel">
-            <div><button id="incremntThickness" onclick="increaseThickness()">+</button></div>
-            <div><button id="decrementThickness" onclick="decreaseThickness()">–</button></div>
-            <div><form>
-                <input type="color" id="kb_selected_color">
-                <span id="hex">#000000</span>
-                </form></div>
-            <div><button id="drawTool" onclick="setDraw()">Draw</button></div>
-		<div><button id="lineTool" onclick="setLine()">Line</button></div>
-        	<div><button id="rectTool" onclick="setRect()">Rectangle</button></div>
-        	<div><button id="ellipseTool" onclick="setEllipse()">Ellipse</button></div>
-        </div>
-        <br>
-
-        <canvas style="text-align: center;"  id="canvas" width="800" height="600" onmousemove="mouseMove(event)" onmousedown="mouseDown()" onmouseup="mouseUp()" onmouseout="mouseOut()"></canvas>
-
-        <script src="./draw.js"></script>
-        <script src="./line.js"></script>
-        <script src="./rect.js"></script>
-        <script src="./ellipse.js"></script>
-        <script src="./Sketching.js"></script>
-    
-    <br>
-    <br>
-    <p> Hier kannst du deinen Gedanken freien Lauf lassen und dir zu beliebigem Thema Mindmaps erstellen...</p>
-    <br>
-
-    </div>
     </body>
 </html>

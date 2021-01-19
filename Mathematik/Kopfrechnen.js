@@ -25,7 +25,7 @@ function init() {
 
 
 function showSolution() {
-	answer = a + " " + op.operator + " " + b + " = " + c;
+	answer = c;
 	document.getElementById("result_input").value = answer;
 }
 

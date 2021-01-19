@@ -1,9 +1,9 @@
- @import "../html-snippets/navBar/navBar.css"; 
+ @import "../html-snippets/navBar/navBar.css";
 
 html {
     scroll-behavior: smooth;
     background-color: rgb(18, 143, 143);
-    
+
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 
 #sketching_panel {
     height: 2em;
-    border: 3px solid red;
+    border: 3px;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ body {
     float: left;
     left: 37%;
     height: 2em;
-    
+
 }
 
 #sketching_panel form{

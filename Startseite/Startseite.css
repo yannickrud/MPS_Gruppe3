@@ -22,7 +22,6 @@ img {
 .responsiveImg {
     width: 70%;
     height: auto;
-    max-width: 800;
 
 }
 
@@ -48,7 +47,7 @@ img {
     padding-top: 2%;
     margin: 0;
 }
-
+/*
 #window2 {
     width: 100%;
     height: auto;
@@ -59,7 +58,7 @@ img {
 
     align-content: center;
 
-}
+}*/
 
 .Einfuehrungstext {
     color: black;
@@ -88,15 +87,30 @@ img {
     font-size: 2vw;
 }
 
+<<<<<<< HEAD
 #window3 {
 
     min-height: 70%;
     position: relative;
+=======
+#window2 {
+    
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    
+
+    padding-top: 7.5%;
+
+    align-content: center;
+    /*position: relative;
+>>>>>>> abaa0e690a986959d901334894cf4492669d3eb8
     padding-bottom: 3rem;
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 100%;
+    width: 100%;*/
     background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

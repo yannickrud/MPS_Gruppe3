@@ -15,14 +15,21 @@ body {
 h1 {
     color: black;
     text-shadow: 2px 2px 5px black;
-    font-size: 4vw;
+    font-size: 50px;
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
 p{
-    font-size: 2vw;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
 }
 span{
 

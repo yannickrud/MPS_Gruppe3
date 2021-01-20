@@ -61,9 +61,12 @@ img {
 
 }
 
-#Einfuehrungstext {
-    margin-left: 10%;
-    margin-right: 10%;
+.Einfuehrungstext {
+    color: black;
+    font-size: 1.7vw;
+    text-shadow: 2px 2px 9px grey;
+    line-height: 2;
+
 }
 
 #EinfuehrungsTextBox {
@@ -86,7 +89,7 @@ img {
 }
 
 #window3 {
-    
+
     min-height: 70%;
     position: relative;
     padding-bottom: 3rem;

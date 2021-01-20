@@ -5,6 +5,9 @@ var currentIndex;
 var c;
 
 function init() {
+    
+    document.getElementById("submit_button").disabled = false;
+    
 	document.getElementById("result_input").value = "";
 	document.getElementById("feedback").innerHTML = "";
 
@@ -32,6 +35,7 @@ function showSolution() {
 	let numbers = document.getElementById("numbers").innerHTML;
 	let answer = c;
 	document.getElementById("result_input").value = answer;
+    document.getElementById("submit_button").disabled = true;
 }
 
 function setNumbers(count) {

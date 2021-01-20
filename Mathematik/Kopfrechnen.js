@@ -5,6 +5,9 @@ var c;
 var op;
 
 function init() {
+    
+    document.getElementById("submit_button").disabled = false;
+    
 	document.getElementById("result_input").value = "";
 	document.getElementById("feedback").innerHTML = "";
 
@@ -27,6 +30,7 @@ function init() {
 function showSolution() {
 	answer = c;
 	document.getElementById("result_input").value = answer;
+    document.getElementById("submit_button").disabled = true;
 }
 
 var divisor;

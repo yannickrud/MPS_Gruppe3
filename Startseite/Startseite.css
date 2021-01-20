@@ -60,9 +60,12 @@ img {
 
 }*/
 
-#Einfuehrungstext {
-    margin-left: 10%;
-    margin-right: 10%;
+.Einfuehrungstext {
+    color: black;
+    font-size: 1.7vw;
+    text-shadow: 2px 2px 9px grey;
+    line-height: 2;
+
 }
 
 #EinfuehrungsTextBox {
@@ -84,6 +87,12 @@ img {
     font-size: 2vw;
 }
 
+<<<<<<< HEAD
+#window3 {
+
+    min-height: 70%;
+    position: relative;
+=======
 #window2 {
     
     min-height: 100%;
@@ -96,6 +105,7 @@ img {
 
     align-content: center;
     /*position: relative;
+>>>>>>> abaa0e690a986959d901334894cf4492669d3eb8
     padding-bottom: 3rem;
     margin: 0;
     padding: 0;

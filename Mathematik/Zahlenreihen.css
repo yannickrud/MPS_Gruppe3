@@ -18,12 +18,21 @@ h1 {
     text-shadow: 2px 2px 5px black;
     font-size: 4vw;
     text-align: center;
-    padding: 0;
+    padding-top: 2%;
     margin: 0;
 }
+
 p{
-    font-size: 2vw;
+    font-size: x-large;
+    text-align: justify;
 }
+
+.text {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
 span{
 
     font-size: 2em;

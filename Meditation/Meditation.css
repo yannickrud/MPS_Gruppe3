@@ -9,6 +9,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-size: x-large;
 }
 
 .center {
@@ -21,9 +22,9 @@ body {
 .headline {
     color: black;
     text-shadow: 2px 2px 5px black;
-    font-size: 6vw;
+    font-size: 4vw;
     text-align: center;
-    padding-bottom: 50;
+    padding-top: 2%;
     margin: 0;
 }
 

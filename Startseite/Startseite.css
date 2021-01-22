@@ -36,7 +36,6 @@ img {
     width: 100%;
     background-color: d9b6b4;
     height: auto;
-    padding-bottom: 50px;
 }
 
 .headline {
@@ -44,7 +43,7 @@ img {
     text-shadow: 2px 2px 5px black;
     font-size: 6vw;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 2.5%;
     margin: 0;
 }
 /*
@@ -65,12 +64,13 @@ img {
     font-size: 1.7vw;
     text-shadow: 2px 2px 9px grey;
     line-height: 2;
+    text-align: justify;
 
 }
 
 #EinfuehrungsTextBox {
     height: 50%;
-    background-color: pink;
+    background-color: d9b6b4;
     width: 80%;
     margin: 0 auto;
     border-radius: 10px;
@@ -84,16 +84,17 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2vw;
+    font-size: x-large;
 }
 
-<<<<<<< HEAD
-#window3 {
 
+<<<<<<< HEAD
     min-height: 70%;
     position: relative;
 
 =======
+=======
+>>>>>>> a257852ee7a6748d86375594e63bf2e35d2c6c24
 #window2 {
 
     min-height: 100%;
